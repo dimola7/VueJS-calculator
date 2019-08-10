@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Todo list app</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body class="container bg" style="padding-top:50px">
+ <div id="app">
+<div class="calculator">
+  <div class="display rounded-top container">{{ current || '0'}}</div>
+  <div class="button container" @click="clear">C</div>
+  <div class="button container" @click="sign">+/-</div>
+  <div class="button container" @click="percent">%</div>
+  <div class="button operator container" @click="divide">÷</div>
+  <div class="button container" @click="append(7)">7</div>
+  <div class="button container" @click="append(8)">8</div>
+  <div class="button container" @click="append(9)">9</div>
+  <div class="button operator container" @click="times">x</div>
+  <div class="button container" @click="append(4)">4</div>
+  <div class="button container" @click="append(5)">5</div>
+  <div class="button container" @click="append(6)">6</div>
+  <div class="button operator container" @click="minus">-</div>
+  <div class="button container"@click="append(1)">1</div>
+  <div class="button container" @click="append(2)">2</div>
+  <div class="button container" @click="append(3)">3</div>
+  <div class="button operator container" @click="plus">+</div>
+  <div class="zero button container" @click="append(0)">0</div>
+  <div class="button container" @click="dot">.</div>
+  <div class="button operator container" @click="equal">=</div>
+  </div>
+
+    <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
